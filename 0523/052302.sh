@@ -1,3 +1,3 @@
 #!/bin/bach
 
-find . -type f | xargs du -b | sort -rn | head -n 5
+ du -b /home/* | sort -n | tac | head -n 5
