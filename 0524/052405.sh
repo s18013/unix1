@@ -1,4 +1,4 @@
 #!/bin/bash 
 
-sudo find /etc -type f -print | xargs grep '172.16.40.1' | sort | uniq
+sudo grep -r 172.16.40.1 /etc/* | sort | uniq
 
