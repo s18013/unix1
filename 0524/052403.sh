@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cut -f 1 /etc/passwd
-cut -f 3 /etc/passwd | sort -n
+cut -d : -f 1 /etc/passwd
+cut -d : -f 3 /etc/passwd | sort -n 
