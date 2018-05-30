@@ -1,3 +1,3 @@
 #!/bin/bash
 
- du -b /home/* | sort -r | tac | tail -n 5
+find ~ -type f | xargs du -b | sort -n | head -n 5
