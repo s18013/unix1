@@ -4,15 +4,14 @@ for ((i=1;i<=100;i++))
 
 do
 	  if (($i % 15 == 0)); then
-		  echo fizzbuzz
+		  echo -n FIZZBUZZ,
 		elif (($i % 3 == 0)); then
-		  echo fizz
+		  echo -n FIZZ,
 		elif (($i % 5 == 0)); then
-		  echo buzz
+		  echo -n BUZZ,
 		else
-		  echo $i
+		  echo -n $i,
 		fi
 done		
 
 exit 0
-
